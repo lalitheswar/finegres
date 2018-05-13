@@ -1,0 +1,10 @@
+
+
+Other choice for test FW
+https://github.com/philsquared/Catch
+
+Other choice for logging
+https://github.com/gabime/spdlog
+
+
+
