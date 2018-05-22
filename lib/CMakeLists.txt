@@ -15,6 +15,17 @@ include_directories (${LIBRARY_INCLUDE_PATH})
 file (GLOB LIB_HEADER_FILES "${LIBRARY_INCLUDE_PATH}/*.h")
 file (GLOB LIB_SOURCE_FILES "${LIBRARY_SRC_PATH}/*.cpp")
 
+#set library
+add_library (${LIB_NAME} STATIC ${LIB_SOURCE_FILES} ${LIB_HEADER_FILES})
+
+#export vars
+set (LIBRARY_INCLUDE_PATH ${LIBRARY_INCLUDE_PATH} PARENT_SCOPE)
+set (LIB_NAME ${LIB_NAME} PARENT_SCOPE)
+
+#test
+enable_testing ()
+add_subdirectory (test)
+
 
 
 

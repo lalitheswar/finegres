@@ -16,6 +16,9 @@ add_subdirectory (third_party EXCLUDE_FROM_ALL)
 add_subdirectory (lib)
 add_subdirectory (finegres)
 
-enable_testing ()
+# configure testing later
+# enable_testing ()
+
+
 
 
